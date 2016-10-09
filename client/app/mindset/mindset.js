@@ -1,3 +1,4 @@
 angular.module('rbk-offline.mindset', [])
 
-.controller('MindsetController', function ($scope) {}
+.controller('MindsetController', function ($scope) {});
+

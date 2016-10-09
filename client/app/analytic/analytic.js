@@ -1,3 +1,3 @@
 angular.module('rbk-offline.analytic', [])
 
-.controller('AnalyticController', function ($scope) {}
+.controller('AnalyticController', function ($scope) {});

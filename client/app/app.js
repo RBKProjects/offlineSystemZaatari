@@ -1,4 +1,4 @@
-angular.module('namaa-news', [
+angular.module('rbk-offline', [
   'rbk-offline.info',
   'rbk-offline.mindset',
   'rbk-offline.english',
@@ -30,5 +30,5 @@ angular.module('namaa-news', [
     .when('/submit', {
       templateUrl: 'app/assets/submit.html'
     })
-    .otherwise('/users')
+    .otherwise('/start')
 })
