@@ -1,12 +1,12 @@
 var mongoose = require('mongoose');
 
-var analyticalSchema = new mongoose.Schema({
+var AnalyticalSchema = new mongoose.Schema({
   form : {
     question : String,
     answer : String,
-    email : email 
+    email : String 
   }
 });
 
-var analytical = mongoose.model('analytical', analyticalSchema);
-module.exports = analytical;
+var Analytical = mongoose.model('Analytical', AnalyticalSchema);
+module.exports = Analytical;

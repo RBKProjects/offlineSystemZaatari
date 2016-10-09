@@ -1,5 +1,6 @@
 var helpers = require('./helpers.js'); 
 var candidate = require('../candidate/candidateController.js');
+var analytical = require('../analytical/analyticalController.js');
 
 module.exports = function (app, express) {
 
@@ -12,8 +13,11 @@ module.exports = function (app, express) {
 		app.get('/api/candidate/getUsers', candidate.getUsers);
 
 	//============================================================================
-	/* 								erorr case  								*/
+	/* 								Analytical  								*/
 	//============================================================================	
+	  	app.post('/api/analytical/insertAnalytical', analytical.insertAnalytical);
+
+
 	  	// If a request is sent somewhere other than the routes above,
 	  	// send it through our custom error handler
 	  	app.use(helpers.errorLogger);

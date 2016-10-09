@@ -25,14 +25,14 @@ module.exports = {
     });
   },
   
-  getAnalytical : function(req, res){
-   Analytical.find().exec(function (err,allUsers) {
-      if(err){
-        res.status(500).send(err);
-      }else{
-        res.json(allUsers);
-      }
-    });
-  }
+  // getAnalytical : function(req, res){
+  //  Analytical.find().exec(function (err,allUsers) {
+  //     if(err){
+  //       res.status(500).send(err);
+  //     }else{
+  //       res.json(allUsers);
+  //     }
+  //   });
+  // }
 
 }

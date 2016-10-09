@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
-var EnglishTest = require();
-var Mindset = require();
-var Analytical = require(); 
+var EnglishTest = require('../englishTest/englishTestModel.js');
+var Mindset = require('../mindset/mindsetModel.js');
+var Analytical = require('../analytical/analyticalModel.js'); 
 
 var CandidateSchema = new mongoose.Schema({
   firstName : {
