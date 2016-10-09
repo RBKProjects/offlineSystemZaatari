@@ -4,7 +4,7 @@ module.exports = {
   
   insertCandidateInfo : function (req, res) {
     var get = req.body;
-    Candidate.findOne({email : email})
+    Candidate.findOne({email : get.email})
     .exec(function (error, candidate) {
       if(candidate){
         res.json('candidate already exist !!');
@@ -42,7 +42,7 @@ module.exports = {
     })
   },
 
-  getUsers: function(req, res){
+  getUsers : function(req, res){
     Candidate.find().exec(function (err,allUsers) {
       if(err){
         res.status(500).send(err);
